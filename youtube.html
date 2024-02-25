@@ -1,55 +1,35 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <style>
-    .thumbnail{
-      width: 300px;
-      height: 300px;
-      object-fit:cover ;
-      object-position: left;
-      border-width: 1px;
-      border-style: groove;
-      border-color: red;
-      
-    }
-    .search-bar { 
-      background-color: rgb(80, 78, 78);
-      
-      
-      color: grey;
-      height: 36px;
-      width: 500px;
-      
-      border-top-left-radius: 18px;
-      border-bottom-left-radius: 18px;
-      cursor: pointer;
-      transition: opacity 0.15s;
-      margin-left: 20px;    
-      vertical-align: top; 
-      border-color: red;
-      border-style: solid;
-      border-width: 1px;
-      
-      padding-left: 30px;
-      
-    }
-    
-    
-    .search-bar:focus{
-     border-color: blue !important;
-     width: 550px;
-      padding-left: 80px;
-      background: url(https://th.bing.com/th/id/OIP.RF8hdNm5eOnLDpG_GSu5NwHaHN?w=199&h=194&c=7&r=0&o=5&dpr=1.5&pid=1.7) left no-repeat;
-      background-size: contain;
-      background-position-x: 5px;
-      background-color: rgb(80, 78, 78);
-    }
-    
-  </style>
-</head>
-<body>
-  <img class="thumbnail" src="thumbnails/thumbnail-1.webp" />
-  <input class="search-bar" type="text" placeholder="Search"/>
-  
-</body>
+  <head>
+    <title>YouTube.com Clone</title>
+    <style>
+      .thumbnail {
+        width: 300px;
+        display: block;
+      }
+
+      .search-bar {
+
+      }
+
+      .video-title {
+        width: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <input class="search-bar" type="text" placeholder="Search">
+    <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
+
+
+    <p class="video-title">
+      Talking Tech <strong>and AI with</strong> Google CEO Sundar Pichai!
+    </p>
+    <p class="video-author">
+      Marques Brownlee
+    </p>
+    <p class="video-stats">
+      3.4M views &#183; 6 months ago
+    </p>
+  </body>
 </html>
